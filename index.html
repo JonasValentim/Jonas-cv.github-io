@@ -1,151 +1,130 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Currículo - Jonas Valentim da Paz Oliveira</title>
-
-<style>
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background:#f4f4f4;
-}
-
-.container{
-    max-width: 900px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-}
-
-header{
-    border-bottom: 2px solid #ddd;
-    margin-bottom:20px;
-}
-
-h1{
-    margin:0;
-    color:#2c3e50;
-}
-
-h2{
-    color:#2c3e50;
-    border-bottom:1px solid #ddd;
-    padding-bottom:5px;
-}
-
-.contact{
-    margin-top:10px;
-    font-size:14px;
-}
-
-.section{
-    margin-top:20px;
-}
-
-ul{
-    padding-left:20px;
-}
-
-.footer{
-    margin-top:30px;
-    font-size:12px;
-    color:gray;
-    text-align:center;
-}
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo | Jonas Valentim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Ajuste para garantir que a foto fique redonda e não distorça */
+        .profile-photo {
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
 </head>
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed">
 
-<body>
+    <header class="bg-slate-900 text-white py-12 shadow-lg">
+        <div class="container mx-auto px-6 max-w-4xl text-center md:text-left flex flex-col md:flex-row items-center gap-8">
+            
+            <div class="flex-shrink-0">
+                <img src="foto-perfil.jpg" alt="Foto de Jonas Valentim" 
+                     class="profile-photo w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-blue-400 shadow-xl bg-slate-700 flex items-center justify-center text-slate-500"
+                     onerror="this.onerror=null; this.src='https://cdn-icons-png.flaticon.com/512/149/149071.png';">
+            </div>
 
-<div class="container">
+            <div class="flex-grow">
+                <h1 class="text-4xl font-extrabold tracking-tight">Jonas Valentim da Paz Oliveira</h1>
+                <p class="text-xl mt-2 text-blue-400 font-medium tracking-wide">Tecnologia em Análise e Desenvolvimento de Sistemas</p>
+                
+                <div class="mt-6 text-sm space-y-2 text-slate-300 grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2 md:space-y-0">
+                    <p><i class="fas fa-envelope mr-2 text-blue-400 w-5 text-center"></i> jonasvalentim021@gmail.com</p>
+                    <p><i class="fas fa-phone mr-2 text-blue-400 w-5 text-center"></i> +55 86 9 9545-1989</p>
+                    <p class="md:col-span-2"><i class="fab fa-linkedin mr-2 text-blue-400 w-5 text-center"></i> <a href="https://linkedin.com/in/jonas-valentim-da-paz-oliveira" target="_blank" class="hover:text-white transition">linkedin.com/in/jonas-valentim-da-paz-oliveira</a></p>
+                    <p class="md:col-span-2"><i class="fas fa-map-marker-alt mr-2 text-blue-400 w-5 text-center"></i> Rua Afonso Pena, Frei Higino - Parnaíba - PI</p>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<header>
-<h1>Jonas Valentim da Paz Oliveira</h1>
+    <main class="container mx-auto px-6 py-12 max-w-4xl">
+        
+        <section class="mb-12 bg-white p-8 rounded-xl shadow-sm border border-slate-100">
+            <h2 class="text-2xl font-bold text-slate-900 mb-4 flex items-center">
+                <i class="fas fa-user-circle mr-3 text-blue-600"></i> Resumo Profissional
+            </h2>
+            <p class="text-slate-600 text-lg italic">
+                "Sou estudante do curso de Tecnologia em Análise e Desenvolvimento de Sistemas com interesse em tecnologia, programação e aprendizado contínuo. Tenho perfil organizado, responsável e comprometido, buscando evoluir tanto tecnicamente quanto profissionalmente. Valorizo o trabalho em equipe, a ética e a aplicação prática do conhecimento acadêmico no ambiente de trabalho."
+            </p>
+        </section>
 
-<div class="contact">
-<p><strong>Data de nascimento:</strong> 25/07/2006</p>
-<p><strong>Endereço:</strong> Rua Afonso Pena, Frei Higino - Parnaíba - PI, CEP: 64207-023</p>
-<p><strong>Telefone:</strong> +55 86 9 9545-1989</p>
-<p><strong>Email:</strong> jonasvalentim021@gmail.com</p>
-<p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jonas-valentim-da-paz-oliveira-9739132a5" target="_blank">
-linkedin.com/in/jonas-valentim-da-paz-oliveira
-</a></p>
-</div>
-</header>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="md:col-span-1 space-y-8">
+                <section>
+                    <h2 class="text-xl font-bold text-slate-900 mb-4 border-b-2 border-blue-600 pb-1 text-uppercase tracking-wider">Habilidades</h2>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-sm font-medium text-slate-700 bg-blue-50 p-2 rounded">
+                            <i class="fas fa-laptop-code mr-2 text-blue-600 w-5 text-center"></i> Informática intermediária
+                        </li>
+                        <li class="flex items-center text-sm font-medium text-slate-700 bg-blue-50 p-2 rounded">
+                            <i class="fas fa-file-excel mr-2 text-blue-600 w-5 text-center"></i> Pacote Office
+                        </li>
+                        <li class="flex items-center text-sm font-medium text-slate-700 bg-blue-50 p-2 rounded">
+                            <i class="fas fa-brain mr-2 text-blue-600 w-5 text-center"></i> Lógica de programação
+                        </li>
+                        <li class="flex items-center text-sm font-medium text-slate-700 bg-blue-50 p-2 rounded">
+                            <i class="fas fa-code mr-2 text-blue-600 w-5 text-center"></i> Programação em C
+                        </li>
+                        <li class="flex items-center text-sm font-medium text-slate-700 bg-blue-50 p-2 rounded">
+                            <i class="fas fa-clipboard-list mr-2 text-blue-600 w-5 text-center"></i> Levantamento de requisitos
+                        </li>
+                        <li class="flex items-center text-sm font-medium text-slate-700 bg-blue-50 p-2 rounded">
+                            <i class="fas fa-sitemap mr-2 text-blue-600 w-5 text-center"></i> Modelagem (UML/Classes)
+                        </li>
+                        <li class="flex items-center text-sm font-medium text-slate-700 bg-blue-50 p-2 rounded">
+                            <i class="fas fa-database mr-2 text-blue-600 w-5 text-center"></i> Noções de Banco de Dados
+                        </li>
+                        <li class="flex items-center text-sm font-medium text-slate-700 bg-blue-50 p-2 rounded">
+                            <i class="fas fa-microchip mr-2 text-blue-600 w-5 text-center"></i> Eng. de Software
+                        </li>
+                    </ul>
+                </section>
 
+                <section>
+                    <h2 class="text-xl font-bold text-slate-900 mb-4 border-b-2 border-blue-600 pb-1 text-uppercase tracking-wider">Objetivo</h2>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Busco uma oportunidade para aplicar e ampliar meus conhecimentos em programação e desenvolvimento de sistemas, adquirindo experiência prática no ambiente profissional e contribuindo com responsabilidade, organização e ética para o crescimento da equipe e da instituição.
+                    </p>
+                </section>
+            </div>
 
-<section class="section">
-<h2>Resumo</h2>
+            <div class="md:col-span-2 space-y-8">
+                <section>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6 flex items-center">
+                        <i class="fas fa-graduation-cap mr-3 text-blue-600"></i> Formação Acadêmica
+                    </h2>
+                    
+                    <div class="relative border-l-2 border-slate-200 pl-6 space-y-8">
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1 bg-blue-600 h-4 w-4 rounded-full border-4 border-white"></div>
+                            <h3 class="font-bold text-xl text-slate-900">Tecnologia em ADS</h3>
+                            <p class="text-blue-600 font-semibold uppercase text-xs tracking-widest">Instituto Federal do Piauí (IFPI) - Campus Parnaíba</p>
+                            <p class="text-slate-500 text-xs font-mono">2025 – Cursando (Noturno)</p>
+                            <p class="mt-2 text-slate-600 text-sm">
+                                Curso voltado à análise, projeto, desenvolvimento, teste, implantação e manutenção de sistemas computacionais, com ênfase em programação, engenharia de software, bancos de dados e boas práticas profissionais.
+                            </p>
+                        </div>
 
-<p>
-Sou estudante do curso de Tecnologia em Análise e Desenvolvimento de Sistemas com interesse em tecnologia,
-programação e aprendizado contínuo. Tenho perfil organizado, responsável e comprometido,
-buscando evoluir tanto tecnicamente quanto profissionalmente.
-Valorizo o trabalho em equipe, a ética e a aplicação prática do conhecimento acadêmico no ambiente de trabalho.
-</p>
-</section>
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1 bg-slate-300 h-4 w-4 rounded-full border-4 border-white"></div>
+                            <h3 class="font-bold text-xl text-slate-900">Ensino Médio</h3>
+                            <p class="text-slate-500 font-semibold uppercase text-xs tracking-widest">CETI Liceu Parnaibano</p>
+                            <p class="text-slate-500 text-xs font-mono">2022 – 2024</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
 
-
-<section class="section">
-<h2>Formação Acadêmica</h2>
-
-<p><strong>Ensino Médio</strong><br>
-CETI Liceu Parnaibano — 2022 a 2024
-</p>
-
-<p><strong>Graduação</strong><br>
-Instituto Federal do Piauí – Campus Parnaíba<br>
-Tecnologia em Análise e Desenvolvimento de Sistemas<br>
-2025 – Cursando (Noturno)
-</p>
-
-<p>
-Curso voltado à análise, projeto, desenvolvimento, teste, implantação e manutenção de sistemas
-computacionais, com ênfase em programação, engenharia de software,
-bancos de dados e boas práticas profissionais.
-</p>
-
-</section>
-
-
-<section class="section">
-<h2>Habilidades</h2>
-
-<ul>
-<li>Informática intermediária</li>
-<li>Pacote Office</li>
-<li>Lógica de programação aplicada</li>
-<li>Programação em C (fundamentos)</li>
-<li>Análise e levantamento de requisitos de sistemas</li>
-<li>Modelagem básica de sistemas (diagramas de classes e casos de uso)</li>
-<li>Noções de banco de dados e organização de dados</li>
-<li>Fundamentos de engenharia de software</li>
-</ul>
-
-</section>
-
-
-<section class="section">
-<h2>Objetivo</h2>
-
-<p>
-Busco uma oportunidade para aplicar e ampliar meus conhecimentos em programação
-e desenvolvimento de sistemas, adquirindo experiência prática no ambiente profissional
-e contribuindo com responsabilidade, organização e ética para o crescimento da equipe e da instituição.
-</p>
-
-</section>
-
-
-<div class="footer">
-Currículo em formato HTML
-</div>
-
-</div>
+    <footer class="bg-slate-100 py-8 mt-12 border-t border-slate-200">
+        <div class="text-center text-slate-500 text-xs">
+            <p class="mb-2 uppercase tracking-widest">Jonas Valentim da Paz Oliveira • 2026</p>
+            <p>Parnaíba - PI</p>
+        </div>
+    </footer>
 
 </body>
 </html>
-
